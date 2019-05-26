@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">  
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+		<h3>Life N Motion Gym</h3>
+			<div id="branding">
+				
+				<h1><span class="highlight">START</spam> THE CHANGE TODAY</h1>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li id="current"><a href="index.html">Home</a><li>
+				<li><a href="schedule.html">Schedule</a><li>
+				<li><a href="stats.html">Gym Stats</a><li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="gymwebsite.html">Login</a></li>
+				
+			</ul>
+		</nav>
+
+		</div>
+		</header>
+		
+<div class="bodytext">
+<h2>Timetable</h2>
+<p>Please note this timetable is updated on a monthly basis.</p>
+<p>Booking is available 15 minutes before each class starts.</p>
+</div>
+
+<!--   Below is the contact form table, javascript is in the gym.js file and explained there how the validation works. This form also has a function is reset and contains - textareas, dropdowns, validation of numbers, text and email address  -->
+<div class="setbody">		
+<div class= "contactform">
+      <form action="javascript:alert('Submitted')" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Email</td>
+               <td><input type = "text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">IRELAND</option>
+                  </select>
+               </td>
+            </tr>
+			
+			  <tr>
+               <td align = "right">Question</td>
+               <td>​<textarea id="question" rows="10" cols="60" name="question"></textarea>
+</td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" />
+			   <input type = "reset" style="background-color: orange"; value = "Reset" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+ 
+</div>	
+</div>
+<script src="gym.js"></script>
+
+
+<div class="footer">
+	<footer>
+		<p>Disclaimer: There's no guarantee of specific results and your results may vary.</p>
+		<p>Life in Motion, Copyright & copy; 2019</p>
+	</br>	
+	</br>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+
+	</footer>
+	
+</div>
+</body>
+</html> 
